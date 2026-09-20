@@ -164,9 +164,9 @@ if(contactForm){
     });
 }
 
-/* ══ CV PRINT ══ */
-function printCvSection(){
-    console.log('Print CV button clicked');
+/* ══ CV DOWNLOAD / PRINT ══ */
+function triggerCvExport(){
+    console.log('CV export button clicked');
 
     const cv = document.getElementById('cvSection') || document.querySelector('.cv-shell');
     if(!cv){
@@ -177,10 +177,20 @@ function printCvSection(){
     try {
         window.print();
     } catch (error) {
-        console.error('Printing failed:', error);
-        alert('Print dialog could not be opened in this browser.');
+        console.error('CV export failed:', error);
+        alert('The browser could not open the print dialog.');
     }
 }
+
+function printCvSection(){
+    triggerCvExport();
+}
+
+const downloadCvBtn = document.getElementById('downloadCvBtn');
+if(downloadCvBtn) downloadCvBtn.addEventListener('click', function(){
+    alert('Your browser will open the print dialog. Choose “Save as PDF” to download the CV.');
+    triggerCvExport();
+});
 
 const printCvBtn = document.getElementById('printCvBtn');
 if(printCvBtn) printCvBtn.addEventListener('click', printCvSection);

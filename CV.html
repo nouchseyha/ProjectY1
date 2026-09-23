@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿```html
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +8,7 @@
     <title>CV | NOUCH SEYHA</title>
 
     <meta name="description"
-          content="Professional CV of NOUCH SEYHA - IT Support and Information Technology student.">
+          content="Professional CV of NOUCH SEYHA - Information Technology student.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,10 +34,8 @@
             --cv-bg: rgba(255,255,255,.025);
             --cv-border: rgba(255,255,255,.09);
             --cv-soft: rgba(107,248,255,.06);
-
             --cv-strong: #6bfff0;
             --cv-gold: #ffd166;
-
             --pink: #ff6b9d;
             --text: #ffffff;
             --muted: #b9c0ca;
@@ -65,10 +64,8 @@
             position: fixed;
             top: 0;
             left: 0;
-
             width: 100%;
             height: 70px;
-
             z-index: 9999;
 
             display: flex;
@@ -76,11 +73,9 @@
             justify-content: space-between;
 
             padding: 0 5%;
-
             box-sizing: border-box;
 
             background: rgba(10, 10, 18, .88);
-
             border-bottom: 1px solid rgba(255,255,255,.08);
 
             backdrop-filter: blur(15px);
@@ -90,14 +85,10 @@
 
         .cv-logo {
             text-decoration: none;
-
             font-family: var(--mono);
-
             font-size: 1rem;
             font-weight: 700;
-
             color: var(--text);
-
             letter-spacing: 2px;
         }
 
@@ -110,11 +101,9 @@
         .cv-nav-links {
             display: flex;
             align-items: center;
-
             gap: 25px;
 
             list-style: none;
-
             margin: 0;
             padding: 0;
         }
@@ -124,14 +113,11 @@
             position: relative;
 
             text-decoration: none;
-
             color: var(--muted);
 
             font-family: var(--head);
-
             font-size: .9rem;
             font-weight: 600;
-
             letter-spacing: 1px;
 
             transition: .3s ease;
@@ -148,7 +134,6 @@
             content: "";
 
             position: absolute;
-
             left: 0;
             bottom: -7px;
 
@@ -171,11 +156,9 @@
             display: none;
 
             border: none;
-
             background: transparent;
 
             color: white;
-
             font-size: 1.5rem;
 
             cursor: pointer;
@@ -192,7 +175,6 @@
             padding: 110px 5% 60px;
 
             position: relative;
-
             z-index: 2;
         }
 
@@ -205,7 +187,6 @@
             background: var(--cv-bg);
 
             border: 1px solid var(--cv-border);
-
             border-radius: 18px;
 
             box-shadow:
@@ -223,7 +204,6 @@
             display: flex;
 
             align-items: center;
-
             justify-content: space-between;
 
             gap: 25px;
@@ -627,7 +607,6 @@
 
             @page {
                 size: A4 portrait;
-
                 margin: 8mm;
             }
 
@@ -642,8 +621,6 @@
             }
 
 
-            /* Hide everything outside CV */
-
             body * {
                 visibility: hidden !important;
             }
@@ -654,8 +631,6 @@
                 visibility: visible !important;
             }
 
-
-            /* Hide navbar */
 
             .cv-navbar,
             .cv-actions,
@@ -850,6 +825,7 @@
             .cv-card,
             .cv-section {
                 break-inside: avoid;
+
                 page-break-inside: avoid;
             }
         }
@@ -1020,23 +996,14 @@
         </a>
 
 
-        <button class="cv-menu" id="cvMenu">
+        <button class="cv-menu" id="cvMenu" type="button">
             <i class="bi bi-list"></i>
         </button>
 
 
         <ul class="cv-nav-links" id="cvNavLinks">
 
-           
-
-          <!-- =================================================
-                 ACTION BUTTONS
-            ================================================== -->
             <li>
-             
-
-            <div class="cv-actions">
-
                 <button
                     type="button"
                     id="downloadCvBtn"
@@ -1047,7 +1014,10 @@
                     Download CV
 
                 </button>
+            </li>
 
+
+            <li>
                 <button
                     type="button"
                     id="printCvBtn"
@@ -1058,8 +1028,10 @@
                     Print CV
 
                 </button>
+            </li>
 
 
+            <li>
                 <a
                     href="https://nouchseyha.github.io/porfolio/"
                     target="_blank"
@@ -1071,14 +1043,11 @@
                     Portfolio
 
                 </a>
-
-            </div>
-            
+            </li>
 
         </ul>
 
     </nav>
-
 
 
     <!-- =====================================================
@@ -1114,29 +1083,21 @@
                         seyhazadow@gmail.com
                     </span>
 
+
                     <span>
                         <i class="bi bi-telephone"></i>
                         +855 88 811 0427
                     </span>
+
 
                     <span>
                         <i class="bi bi-geo-alt"></i>
                         Phnom Penh, Cambodia
                     </span>
 
-                    <a href="https://nouchseyha.github.io/porfolio/" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:8px; text-decoration:none; color: var(--muted); background: rgba(255,255,255,.025); border: 1px solid var(--cv-border); padding: 8px 12px; border-radius: 999px; font-family: var(--head); font-size: .84rem;">
-                        <i class="bi bi-globe"></i>
-                        Portfolio
-                    </a>
-
                 </div>
 
             </div>
-
-
-
-           
-
 
 
             <!-- =================================================
@@ -1177,7 +1138,6 @@
                         </div>
 
                     </div>
-
 
 
                     <!-- TECHNICAL SKILLS -->
@@ -1288,7 +1248,6 @@
                     </div>
 
 
-
                     <!-- PROFESSIONAL SKILLS -->
 
                     <div class="cv-section">
@@ -1329,7 +1288,6 @@
                     </div>
 
 
-
                     <!-- LANGUAGES -->
 
                     <div class="cv-section">
@@ -1360,7 +1318,6 @@
                 </aside>
 
 
-
                 <!-- =================================================
                      MAIN CONTENT
                 ================================================== -->
@@ -1380,13 +1337,19 @@
                         <div class="cv-card">
 
                             <p>
-                               To develop my career in the technology field where I can apply my knowledge of programming, web development, databases, computer systems, and software technologies. I am eager to gain practical experience, contribute to real-world projects, learn from experienced professionals, and continue developing my technical and professional skills.
+                                To develop my career in the technology field
+                                where I can apply my knowledge of programming,
+                                web development, databases, computer systems,
+                                and software technologies. I am eager to gain
+                                practical experience, contribute to real-world
+                                projects, learn from experienced professionals,
+                                and continue developing my technical and
+                                professional skills.
                             </p>
 
                         </div>
 
                     </div>
-
 
 
                     <!-- EDUCATION -->
@@ -1421,7 +1384,6 @@
                         </div>
 
 
-
                         <div class="cv-item">
 
                             <div class="cv-item-header">
@@ -1445,7 +1407,6 @@
                         </div>
 
 
-
                         <div class="cv-item">
 
                             <div class="cv-item-header">
@@ -1465,17 +1426,62 @@
                     </div>
 
 
-
-                    <!-- PROJECTS -->
+                    <!-- =================================================
+                         EXPERIENCE & PRACTICAL EXPERIENCE
+                    ================================================== -->
 
                     <div class="cv-section">
 
                         <h2 class="cv-section-title">
-                            Projects & Practical Experience
+                            Experience & Practical Experience
                         </h2>
 
 
-                        <!-- PROJECT 1 -->
+                        <!-- STOCK CONTROL 2025 -->
+
+                        <div class="cv-item">
+
+                            <div class="cv-item-header">
+
+                                <h3>
+                                    Stock Control Experience
+                                </h3>
+
+                                <span>
+                                    2025
+                                </span>
+
+                            </div>
+
+
+                           
+
+                        </div>
+
+
+                        <!-- SALES OUT 2026 -->
+
+                        <div class="cv-item">
+
+                            <div class="cv-item-header">
+
+                                <h3>
+                                    Sales Out Experience
+                                </h3>
+
+                                <span>
+                                    2026
+                                </span>
+
+                            </div>
+
+
+                           
+
+                        </div>
+
+
+                        <!-- COMPUTER & IT PRACTICAL WORK -->
 
                         <div class="cv-item">
 
@@ -1511,8 +1517,7 @@
                         </div>
 
 
-
-                        <!-- PROJECT 2 -->
+                        <!-- WEB DEVELOPMENT -->
 
                         <div class="cv-item">
 
@@ -1533,8 +1538,8 @@
 
                                 <li>
                                     Built academic and personal projects
-                                    using HTML, CSS, JavaScript,
-                                    Bootstrap, PHP, Laravel, C#, and Java.
+                                    using HTML, CSS, JavaScript, Bootstrap,
+                                    PHP, Laravel, C#, and Java.
                                 </li>
 
                                 <li>
@@ -1547,8 +1552,7 @@
                         </div>
 
 
-
-                        <!-- PROJECT 3 -->
+                        <!-- E-COMMERCE -->
 
                         <div class="cv-item">
 
@@ -1583,8 +1587,7 @@
                         </div>
 
 
-
-                        <!-- PROJECT 4 -->
+                        <!-- C# DESKTOP -->
 
                         <div class="cv-item">
 
@@ -1622,7 +1625,6 @@
                     </div>
 
 
-
                     <!-- REFERENCES -->
 
                     <div class="cv-section">
@@ -1635,7 +1637,33 @@
                         <div class="cv-card">
 
                             <p>
-                                Available upon request.
+
+                                <a
+                                    href="https://nouchseyha.github.io/porfolio/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+
+                                    style="
+                                        display:inline-flex;
+                                        align-items:center;
+                                        gap:8px;
+                                        text-decoration:none;
+                                        color:var(--muted);
+                                        background:rgba(255,255,255,.025);
+                                        border:1px solid var(--cv-border);
+                                        padding:8px 12px;
+                                        border-radius:999px;
+                                        font-family:var(--head);
+                                        font-size:.84rem;
+                                    "
+                                >
+
+                                    <i class="bi bi-globe"></i>
+
+                                    Portfolio
+
+                                </a>
+
                             </p>
 
                         </div>
@@ -1649,7 +1677,6 @@
         </div>
 
     </main>
-
 
 
     <!-- =====================================================
@@ -1668,6 +1695,24 @@
         if (printButton) {
 
             printButton.addEventListener("click", function () {
+
+                window.print();
+
+            });
+
+        }
+
+
+        /* ================================================
+           DOWNLOAD CV
+        ================================================= */
+
+        const downloadButton =
+            document.getElementById("downloadCvBtn");
+
+        if (downloadButton) {
+
+            downloadButton.addEventListener("click", function () {
 
                 window.print();
 
@@ -1716,3 +1761,4 @@
 
 </body>
 </html>
+```
